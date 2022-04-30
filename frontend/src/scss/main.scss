@@ -1,2 +1,7 @@
 @import './config';
+@import './components/menu';
 @import './components/header';
+
+body {
+  font-family: 'VoltaModernDisplay';
+}
