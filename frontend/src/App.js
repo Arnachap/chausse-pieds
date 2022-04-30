@@ -1,6 +1,7 @@
-import Menu from './components/Menu';
-import Header from './components/Header';
-import ReactFullpage from '@fullpage/react-fullpage';
+import Menu from './components/Menu'
+import Header from './components/Header'
+import Services from './components/Services'
+import ReactFullpage from '@fullpage/react-fullpage'
 
 const App = () => {
   return (
@@ -18,14 +19,14 @@ const App = () => {
               </div>
 
               <div className='section'>
-                <p>Section 2</p>
+                <Services />
               </div>
             </ReactFullpage.Wrapper>
-          );
+          )
         }}
       />
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
