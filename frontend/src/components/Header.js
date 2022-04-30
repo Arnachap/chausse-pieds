@@ -15,6 +15,8 @@ const Header = () => {
 
             <a className='intro-logo' href="mailto:contact@chaussepieds.fr"><i class="far fa-envelope"></i></a>
         </div>
+
+        
     </header>
   )
 }
