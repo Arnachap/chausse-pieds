@@ -1,87 +1,13 @@
-#menu {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  opacity: 1;
-  transform: translateY(-50%);
-  right: 18px;
+#fp-nav ul span {
+  background: #fff !important;
+}
 
-  ul {
-    margin: 0;
-    padding: 0;
+body.fp-viewing-services #fp-nav ul {
+  span {
+    background: #333 !important;
+  }
 
-    li {
-      display: block;
-      width: 14px;
-      height: 13px;
-      margin: 7px;
-      position: relative;
-
-      &:hover {
-        a.active span {
-          height: 12px;
-          width: 12px;
-          margin: -6px 0 0 -6px;
-          border-radius: 100%;
-        }
-
-        a span {
-          width: 10px;
-          height: 10px;
-          margin: -5px 0px 0px -5px;
-        }
-
-        .menu-tooltip {
-          transition: opacity 0.2s ease-in;
-          width: auto;
-          opacity: 1;
-        }
-      }
-
-      a {
-        display: block;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        text-decoration: none;
-
-        &.active span {
-          height: 12px;
-          width: 12px;
-          margin: -6px 0 0 -6px;
-          border-radius: 100%;
-        }
-
-        span {
-          border-radius: 50%;
-          position: absolute;
-          z-index: 1;
-          height: 6px;
-          width: 6px;
-          border: 0;
-          background: #fff;
-          left: 50%;
-          top: 50%;
-          margin: -2px 0 0 -2px;
-          transition: all 0.1s ease-in-out;
-        }
-      }
-
-      .menu-tooltip {
-        position: absolute;
-        top: -5px;
-        color: #fff;
-        white-space: nowrap;
-        max-width: 220px;
-        overflow: hidden;
-        display: block;
-        opacity: 0;
-        width: 0;
-        cursor: pointer;
-        right: 20px;
-      }
-    }
+  .fp-tooltip {
+    color: #333;
   }
 }

@@ -1,4 +1,3 @@
-import Menu from './components/Menu'
 import Header from './components/Header'
 import Services from './components/Services'
 import ReactFullpage from '@fullpage/react-fullpage'
@@ -6,11 +5,11 @@ import ReactFullpage from '@fullpage/react-fullpage'
 const App = () => {
   return (
     <>
-      <Menu />
-
       <ReactFullpage
         anchors={['accueil', 'services', 'noustrouver', 'contact']}
+        navigationTooltips={['Accueil', 'Services', 'Nous trouver', 'Contact']}
         menu='#menu'
+        navigation='true'
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
@@ -18,7 +17,7 @@ const App = () => {
                 <Header />
               </div>
 
-              <div className='section'>
+              <div className='section' id='srvcs'>
                 <Services />
               </div>
             </ReactFullpage.Wrapper>
