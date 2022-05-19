@@ -53,6 +53,63 @@ header {
       header #intro .intro-logo:hover {
         color: #fff; }
 
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateX(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+  header .read-more {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center; }
+    header .read-more p {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    header .read-more a {
+      color: #fff; }
+      header .read-more a .bounce {
+        animation: bounce 2s infinite;
+        transition: 0.5s ease-out; }
+
 #srvcs .section-title {
   transform: translateY(-50px);
   opacity: 0;

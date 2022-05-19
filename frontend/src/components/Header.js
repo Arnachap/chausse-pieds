@@ -1,5 +1,5 @@
-import React from 'react';
-import logo from '../img/logo-white.png';
+import React from 'react'
+import logo from '../img/logo-white.png'
 
 const Header = () => {
   return (
@@ -29,8 +29,16 @@ const Header = () => {
           <i class='far fa-envelope'></i>
         </a>
       </div>
-    </header>
-  );
-};
 
-export default Header;
+      <div className='read-more'>
+        <p>En savoir plus...</p>
+
+        <a href='#services'>
+          <i class='fa fa-chevron-down fa-3x bounce'></i>
+        </a>
+      </div>
+    </header>
+  )
+}
+
+export default Header

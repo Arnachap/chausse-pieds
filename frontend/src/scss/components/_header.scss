@@ -1,40 +1,115 @@
-
-
 header {
-    background-image: url('../img/main-background.jpg');
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+  background-image: url('../img/main-background.jpg');
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 
-    #intro {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 50%;
-        text-align: center;
-        color: #fff;
-        transform: translate(-50%, -50%);
-        padding: 60px 0;
+  #intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 60px 0;
 
-        #logo-header {
-            width: 50%;
-            padding-bottom: 60px;
-        }
-
-        h1 {
-            font-family: 'LaborUnion-Small';
-            font-size: 30px;
-            margin-bottom: 50px;
-        }
-
-        .intro-logo {
-            color: #fff;
-            font-size: 30px;
-            margin: 0 10px;
-
-            &:hover {
-                color: #fff;
-            }
-        }
+    #logo-header {
+      width: 50%;
+      padding-bottom: 60px;
     }
+
+    h1 {
+      font-family: 'LaborUnion-Small';
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    .intro-logo {
+      color: #fff;
+      font-size: 30px;
+      margin: 0 10px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  @-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateX(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  @-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -ms-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  .read-more {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+
+    p {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: #fff;
+
+      .bounce {
+        animation: bounce 2s infinite;
+        transition: 0.5s ease-out;
+      }
+    }
+  }
 }
