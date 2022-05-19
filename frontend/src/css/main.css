@@ -53,23 +53,38 @@ header {
       header #intro .intro-logo:hover {
         color: #fff; }
 
-#srvcs h2 {
-  font-family: 'Nelphim';
-  font-size: 50px;
-  letter-spacing: 1px;
-  text-align: center;
-  background-image: linear-gradient(310deg, #7928ca, #ff0080);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  z-index: 1;
-  color: #cb0c9f !important; }
+#srvcs .section-title {
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: 0.5s ease-out;
+  transition-delay: 0.5s; }
+  #srvcs .section-title h2 {
+    font-family: 'Nelphim';
+    font-size: 66px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    color: #464646; }
+  #srvcs .section-title .lead {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #4c4c4c; }
 
-#srvcs .lead {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #344767; }
+#srvcs .service-card {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.5s ease-out; }
+  #srvcs .service-card.shoe {
+    transition-delay: 0.8s; }
+  #srvcs .service-card.sneakers {
+    transition-delay: 0.6s; }
+  #srvcs .service-card.keys {
+    transition-delay: 0.4s; }
+  #srvcs .service-card.services {
+    transition-delay: 0.2s; }
 
 #srvcs .card {
   align-items: center;
@@ -77,10 +92,11 @@ header {
   border-radius: 16px;
   overflow: hidden;
   transition: 0.2s ease-out;
-  height: 441px;
+  height: 440px;
   transform-origin: 50% 0;
   transform: perspective(999px) rotateX(0deg) translateZ(0);
-  box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 8px; }
   #srvcs .card:hover {
     transform: perspective(999px) rotateX(7deg) translate3d(0, -4px, 5px); }
   #srvcs .card::after {
@@ -104,16 +120,24 @@ header {
     position: absolute; }
   #srvcs .card .card-body {
     padding: 24px;
-    padding-top: 256px;
+    padding-top: 240px;
     z-index: 2;
     color: #fff;
     flex: 1 1 auto; }
     #srvcs .card .card-body .card-title {
       font-size: 24px;
-      font-weight: 600; }
+      font-family: 'LaborUnion-Small'; }
     #srvcs .card .card-body .card-text {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400; }
+
+body.fp-viewing-services .section-title {
+  transform: translateY(0) !important;
+  opacity: 1 !important; }
+
+body.fp-viewing-services .service-card {
+  transform: translateX(0) !important;
+  opacity: 1 !important; }
 
 body {
   font-family: 'VoltaModernDisplay'; }

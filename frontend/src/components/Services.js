@@ -11,17 +11,19 @@ const Services = () => {
     <Container>
       <Row className='justify-content-center'>
         <Col lg='6'>
-          <h2>Nos Services</h2>
+          <div className='section-title'>
+            <h2>Nos Services</h2>
 
-          <p className='lead'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
+            <p className='lead'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
         </Col>
       </Row>
 
       <Row>
-        <Col>
+        <Col className='service-card shoe'>
           <Card>
             <div
               className='full-background'
@@ -39,7 +41,7 @@ const Services = () => {
           </Card>
         </Col>
 
-        <Col>
+        <Col className='service-card sneakers'>
           <Card>
             <div
               className='full-background'
@@ -47,7 +49,10 @@ const Services = () => {
             ></div>
 
             <Card.Body>
-              <Card.Title>Pressing à Sneakers</Card.Title>
+              <Card.Title>
+                Pressing
+                <br />à Sneakers
+              </Card.Title>
 
               <Card.Text>
                 Entretien, rénovation et customisation de vos baskets.
@@ -56,7 +61,7 @@ const Services = () => {
           </Card>
         </Col>
 
-        <Col>
+        <Col className='service-card keys'>
           <Card>
             <div
               className='full-background'
@@ -64,7 +69,11 @@ const Services = () => {
             ></div>
 
             <Card.Body>
-              <Card.Title>Reproduction de clés</Card.Title>
+              <Card.Title>
+                Reproduction
+                <br />
+                de clés
+              </Card.Title>
               <Card.Text>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </Card.Text>
@@ -72,7 +81,7 @@ const Services = () => {
           </Card>
         </Col>
 
-        <Col>
+        <Col className='service-card services'>
           <Card>
             <div
               className='full-background'
@@ -80,7 +89,11 @@ const Services = () => {
             ></div>
 
             <Card.Body>
-              <Card.Title>Multi-services</Card.Title>
+              <Card.Title>
+                Multi
+                <br />
+                services
+              </Card.Title>
 
               <Card.Text>
                 Accessoires et produits de la chaussure et du cuir, produits
