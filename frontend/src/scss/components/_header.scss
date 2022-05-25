@@ -29,9 +29,10 @@ header {
       color: #fff;
       font-size: 30px;
       margin: 0 10px;
+      transition: 0.1s ease-out;
 
       &:hover {
-        color: #fff;
+        color: #e91e63;
       }
     }
   }
@@ -104,7 +105,7 @@ header {
     }
 
     a {
-      color: #fff;
+      color: #e91e63;
 
       .bounce {
         animation: bounce 2s infinite;

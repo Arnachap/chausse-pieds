@@ -1,0 +1,52 @@
+#noustrouver {
+  padding: 0;
+  background-image: linear-gradient(195deg, #42424a, #191919);
+
+  .section-title {
+    h2 {
+      font-family: 'Nelphim';
+      font-size: 66px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+
+    .lead {
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #fff;
+    }
+  }
+
+  .card {
+    margin: auto;
+    width: 600px;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.1);
+
+    .card-img {
+      margin: -24px 20px 0 20px;
+      width: calc(100% - 40px);
+      border-radius: 16px;
+      box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .card-text {
+      text-align: center;
+      font-family: 'Nephilm';
+      font-size: 20px;
+
+      img {
+        width: 30%;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

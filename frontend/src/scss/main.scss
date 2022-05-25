@@ -1,8 +1,12 @@
 @import './config';
-@import './components/menu';
 @import './components/header';
+@import './components/about';
 @import './components/services';
+@import './components/findUs';
+@import './components/contact';
+@import './components/animate';
 
 body {
+  background-color: rgb(240, 242, 245);
   font-family: 'VoltaModernDisplay';
 }

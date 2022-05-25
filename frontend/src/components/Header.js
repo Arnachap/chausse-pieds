@@ -22,11 +22,11 @@ const Header = () => {
           href='https://www.facebook.com/Chausse-Pieds-106818545156437/'
           target='_blank'
         >
-          <i class='fab fa-facebook-square'></i>
+          <i className='fab fa-facebook-square'></i>
         </a>
 
         <a className='intro-logo' href='mailto:contact@chaussepieds.fr'>
-          <i class='far fa-envelope'></i>
+          <i className='far fa-envelope'></i>
         </a>
       </div>
 
@@ -34,7 +34,7 @@ const Header = () => {
         <p>En savoir plus...</p>
 
         <a href='#services'>
-          <i class='fa fa-chevron-down fa-3x bounce'></i>
+          <i className='fa fa-chevron-down fa-3x bounce'></i>
         </a>
       </div>
     </header>
