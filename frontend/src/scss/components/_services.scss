@@ -80,3 +80,35 @@
     }
   }
 }
+
+@media (max-width: 974px) {
+  #srvcs {
+    padding: 80px 0;
+
+    .container .section-title {
+      h2 {
+        font-size: 44px;
+        margin-bottom: 24px;
+      }
+
+      .lead {
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .card {
+      margin: 0px 8px 40px 8px !important;
+
+      .card-body {
+        .card-title {
+          font-size: 20px;
+        }
+
+        .card-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

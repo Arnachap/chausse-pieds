@@ -52,3 +52,20 @@
     }
   }
 }
+
+@media (max-width: 974px) {
+  #about .card {
+    .card-img {
+      margin: -48px 48px 48px 20px;
+    }
+
+    h2 {
+      font-size: 44px;
+    }
+
+    .card-text {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+}
